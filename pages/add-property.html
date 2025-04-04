@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Property - Dream Home Real Estate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Real Estate Logo">
+            <h1>Real Estate</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="view-all.html">Properties</a></li>
+                <li><a href="add-property.html" class="active">Add Property</a></li>
+                <li><a href="#" class="search-btn">Search</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search by location, city or property name...">
+            <button id="search-submit">Search</button>
+            <button class="close-search"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <section class="page-header">
+        <h1>Add New Property</h1>
+        <p>List your property in our marketplace</p>
+    </section>
+
+    <section class="add-property-form">
+        <form id="property-form">
+            <div class="form-group">
+                <label for="property-title">Property Title</label>
+                <input type="text" id="property-title" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type" required>
+                        <option value="">Select Type</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="condo">Condo</option>
+                        <option value="villa">Villa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="property-status">Status</label>
+                    <select id="property-status" required>
+                        <option value="">Select Status</option>
+                        <option value="for-sale">For Sale</option>
+                        <option value="for-rent">For Rent</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="property-price">Price ($)</label>
+                    <input type="number" id="property-price" required>
+                </div>
+                <div class="form-group">
+                    <label for="property-area">Area (sq ft)</label>
+                    <input type="number" id="property-area" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="property-bedrooms">Bedrooms</label>
+                    <input type="number" id="property-bedrooms" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="property-bathrooms">Bathrooms</label>
+                    <input type="number" id="property-bathrooms" min="0" step="0.5" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="property-city">City</label>
+                    <input type="text" id="property-city" required>
+                </div>
+                <div class="form-group">
+                    <label for="property-location">Location/Address</label>
+                    <input type="text" id="property-location" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="property-description">Description</label>
+                <textarea id="property-description" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="property-image">Image URL</label>
+                <input type="text" id="property-image" placeholder="Enter image URL or leave blank for default">
+            </div>
+            <div class="form-group">
+                <label>Features</label>
+                <div class="features-container">
+                    <div class="feature-checkbox">
+                        <input type="checkbox" id="feature-parking">
+                        <label for="feature-parking">Parking</label>
+                    </div>
+                    <div class="feature-checkbox">
+                        <input type="checkbox" id="feature-ac">
+                        <label for="feature-ac">Air Conditioning</label>
+                    </div>
+                    <div class="feature-checkbox">
+                        <input type="checkbox" id="feature-pool">
+                        <label for="feature-pool">Swimming Pool</label>
+                    </div>
+                    <div class="feature-checkbox">
+                        <input type="checkbox" id="feature-gym">
+                        <label for="feature-gym">Gym</label>
+                    </div>
+                    <div class="feature-checkbox">
+                        <input type="checkbox" id="feature-security">
+                        <label for="feature-security">Security</label>
+                    </div>
+                    <div class="feature-checkbox">
+                        <input type="checkbox" id="feature-balcony">
+                        <label for="feature-balcony">Balcony</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn primary-btn">Add Property</button>
+                <button type="reset" class="btn secondary-btn">Reset</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Real Estate</h3>
+                <p>Your trusted partner in finding the perfect home</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="view-all.html">Properties</a></li>
+                    <li><a href="add-property.html">Add Property</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate St, City</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@realestate.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/property.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+</html>
